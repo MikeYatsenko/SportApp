@@ -17,11 +17,7 @@ psycopg2
 
 crispy-forms
 
-gunicorn
 
-whitenoise
-
-black
 
 
 ### Database in settings.py
@@ -55,3 +51,7 @@ $ python manage.py runserver
 http://127.0.0.1:8000/api
 
 http://127.0.0.1:8000/api/create/ - create new instance
+
+http://127.0.0.1:8000/api/<slug:slug>/update/ - update training plan (only for admin user)
+
+http://127.0.0.1:8000/api/<slug:slug>/delete/ - delete training plan (only for admin user)
